@@ -1,0 +1,160 @@
+body{
+    width:780px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+
+}
+.courseName {
+    font-size: 70px;
+    margin: 0;
+}
+
+.description{
+    font-size: 45px;
+    
+}
+
+span {
+    color: red;
+}
+
+.aboutCourse {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.container {
+    vertical-align: bottom;
+}
+
+html{
+    overflow:  hidden;
+}
+
+.figures{
+    display: inline-block;
+}
+
+   /*Левая трапеция */
+.trapeze {
+    margin: 20px 0; 
+    width: 130px; 
+    height: 56px;
+    background: #ffbf00;
+    position: relative;
+    transform: rotate(290deg);
+}
+
+.trapeze:before {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute; 
+    left: 0;
+    border-left: 130px solid transparent;
+}
+
+.trapeze:before {
+    top: -44px;
+    border-bottom: 45px solid #ffbf00;
+}
+
+/* Шестиугольник*/
+.sixangle {
+    margin: 20px 0; 
+    width: 80px; 
+    height: 45px;
+    background: red;
+    position: relative;
+    transform: rotate(160deg) translate(40px, 0px);
+}
+    
+.sixangle:before, .sixangle:after {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute; 
+    left: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.sixangle:before {
+    top: -24px;
+    border-bottom: 25px solid red;
+}
+
+.sixangle:after {
+    bottom: -24px;
+    border-top: 25px solid red;
+}
+
+
+/*Квадрат*/
+
+.square {
+    width: 120px;
+    height: 120px;
+    background: black;
+    transform: translate(-36px,36px);
+}
+
+    /*Треугольник*/
+
+.threeangle {
+    width: 0; 
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+    transform: translate(-120px, -85px);
+}
+
+/*Круг*/
+.circle{
+    width: 200px; 
+    height: 200px;
+    background: #ffbf00;
+    border-radius: 50%;
+    transform: translate(-144px, 25px);
+}   
+
+
+/*Пятиугольник*/
+
+.fiveangle {
+    position: relative;
+    width:72px;
+    border-width: 71px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+    transform: rotate(190deg) translate(152px, 0px);
+}
+.fiveangle:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -123px;
+    left: -18px;
+    border-width: 0 54px 53px;
+    border-style: solid;
+    border-color: transparent transparent red;
+   
+}
+
+    /*Правая трапеция*/
+.trapezeright {
+    height: 0; 
+    width: 80px;
+    border-bottom: 50px solid #ffbf00;
+    border-right: 50px solid transparent;
+    transform:rotate(45deg) translate(315px, -530px);
+    margin-top: 100px;
+}
+    
